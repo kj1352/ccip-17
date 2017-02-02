@@ -1,0 +1,63 @@
+@font-face{
+    font-family: "roboto";
+    src: url('../Roboto-Black.ttf');
+}
+
+@font-face{
+    font-family: "mont";
+    src: url('../Montserrat-Regular.ttf');
+}
+
+
+.about{
+    background: linear-gradient(151deg,#973230, #983f3e,#a95f5e);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#jss{
+    margin: 10px;
+    color: #f4c1c0;
+    font-family: "mont", monospace;
+}
+
+#jss_heading{
+    text-align: center;
+    font-family: "roboto", serif;
+    color: #4d0503;
+}
+
+.dept > h3{
+    color: #4d0503;
+    text-align: center;
+    font-family: "roboto","mont";
+}
+
+.dept > blockquote > h4{
+    color: #4d0503;
+} 
+.dept > blockquote{
+    font-family: "mont";
+    color: #f4c1c0;
+}
+
+.newsfeed > div{
+    padding: 10px 0px;
+    background-color: #f4c1c0;
+}
+
+.newsfeed > div > h3{
+    text-align: center;
+    color: #a95f5e;
+    font-family: "roboto", serif;
+}
+
+.newsfeed > div > p{
+    color: Black;
+    font-family: "mont";
+    margin: 30px;
+}
+
+@media only screen and (max-width: 769px) {
+    
+}

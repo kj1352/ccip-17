@@ -1,0 +1,160 @@
+@font-face{
+    font-family: "roboto";
+    src: url('../Roboto-Black.ttf');
+}
+
+@font-face{
+    font-family: "slabo";
+    src: url('../Slabo27px-Regular.ttf');
+}
+
+@font-face{
+    font-family: "mont";
+    src: url('../Montserrat-Regular.ttf');
+}
+
+
+body, html {
+    height: 100%;
+    background-color: #bcbcbc;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.parallax1 {
+    z-index: 2;
+    /* The image used */
+    background-image: url('../images/JSSATEB-Green-Campus-15.jpg');
+
+    /* Full height */
+    height: 80%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar{
+    background-color: #782e2c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-family: "roboto", "mont", monospace;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-align: right;
+    z-index: 10;
+}
+
+.navbar > span{
+    margin-right: 40px;
+}
+
+.navbar > span:hover{
+    cursor: pointer;
+    color: #082644;
+}
+
+.navbar > #menu{
+    display: none;
+}
+
+.navbar > button{
+    background-color: inherit;
+    border: 0px solid;
+    color: aliceblue;
+}
+
+.selected{
+    color: yellow;
+}
+
+.callp{
+    background-color: #782e2c;
+    margin-top: 50px;
+    color: aliceblue;
+    font-family: "mont", cursive;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.callp > div >h1{
+    margin-left: 10px;
+}
+
+main{
+    background-color: #ffd141;
+    padding: 10px 0px;
+}
+
+main > p{
+    margin: 30px;
+    font-family: "slabo", monospace;
+    font-size: 20px;
+    color: black;
+}
+
+.container{
+    display: flex;
+    color: black;
+}
+
+.box{
+    width: 50%;
+}
+
+.box > h3{
+    text-align: center;
+}
+
+.list{
+    margin-left: 30%;
+}
+
+.psubmission{
+    color: black;
+    margin-left: 30px;
+    width: 90%;
+}
+
+#link{
+    color: black;
+}
+
+.dates{
+    box-shadow: 1px 1px 3px 3px black inset;
+    width: 50%;
+    margin-left: 20%;
+    padding: 30px;
+    color: black;
+}
+
+@media only screen and (max-width: 769px) {
+    .navbar{
+            text-align: left;
+        }
+    .navbar > span{
+        display: none;
+        font-size: 10px;        
+    }
+    .navbar > #menu{
+        display: block;
+    }
+    
+    .parallax1{
+        height: 80%;
+    }
+    
+    .container{
+        display: block;
+    }
+}
